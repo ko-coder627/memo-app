@@ -26,3 +26,12 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+.memo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: red;
+}

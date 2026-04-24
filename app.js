@@ -31,3 +31,13 @@ function createMemo(text) {
 
   document.getElementById("memoList").appendChild(div);
 }
+const deleteBtn = document.createElement("button");
+deleteBtn.textContent = "削除";
+
+deleteBtn.onclick = function (e) {
+  e.stopPropagation(); // 編集と分ける
+  div.remove();
+  deleteMemo(text);
+};
+
+div.appendChild(deleteBtn);
